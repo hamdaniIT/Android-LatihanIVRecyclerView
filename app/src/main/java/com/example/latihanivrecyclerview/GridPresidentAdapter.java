@@ -16,8 +16,12 @@ import java.util.ArrayList;
 public class GridPresidentAdapter extends RecyclerView.Adapter<GridPresidentAdapter.GridViewHolder> {
     private Context context;
 
+    public GridPresidentAdapter(Context context) {
+        this.context = context;
+    }
 
     private ArrayList<President> listPresident;
+
     public Context getContext() {
         return context;
     }
